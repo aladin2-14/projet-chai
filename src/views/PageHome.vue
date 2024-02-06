@@ -13,7 +13,7 @@
         </ul>
         <div class="headers-deux">
             <h3>Sign in</h3>
-            <div class="un-un">
+            <div class="hearders-trois">
                 <button>Sign up</button>
             </div>
         </div>
@@ -21,7 +21,13 @@
        
        
     </header>
-    <div class="un-un"></div>
+    <div class="un-un">
+        <div class="un-un-un">
+            <h1>Content is the key <br>to building an <br>audience</h1>
+            <p>Mauris donec turpis suscipit sapien aciix sagittis sapien <br> tempor a volute ligula and aliquet tortor</p>
+        </div>
+            <img src="../assets/img/hero-2-img.png" alt="">
+    </div>
     </div>
    
 </template>
@@ -53,7 +59,7 @@ export default {
 .headers-un ul {
     display: flex;
     list-style-type: none;
-    gap: 2vw;
+    gap: 1.5vw;
     margin-top: 3vw;
     position: relative;
 }
@@ -69,13 +75,22 @@ export default {
 .headers-deux{
     display: flex;
     color: aliceblue;
-    gap: 2vw;
+    gap: 1.5vw;
     margin-top: 3vw;
     position: relative;
 }
-.un-un button{
+.headers-trois button{
     width: 7vw;
     height: 3vw;
     border-radius: 9px;
+}
+.un-un{
+    display: flex;
+    margin-top: 7vh;
+    gap: 19vw;
+}
+.un-un img{
+    
+    width: 40%;
 }
 </style>
