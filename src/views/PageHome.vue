@@ -1,6 +1,7 @@
 <template>
     <div class="un">
- <header>
+        <div class="fotos">
+            <header>
     <div class="headers-un">
         <img src="../assets/logo-white.png" alt="">
         <ul>
@@ -23,74 +24,115 @@
     </header>
     <div class="un-un">
         <div class="un-un-un">
-            <h1>Content is the key <br>to building an <br>audience</h1>
+            <h1><strong>Content is the <br>key to building <br>an audience</strong></h1>
             <p>Mauris donec turpis suscipit sapien aciix sagittis sapien <br> tempor a volute ligula and aliquet tortor</p>
         </div>
             <img src="../assets/img/hero-2-img.png" alt="">
     </div>
+        </div>
     </div>
-   
 </template>
 
 <script>
 export default {
-   
+    setup () {
+        
+
+        return {}
+    }
 }
 </script>
 
-<style>
+<style >
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+margin: 0px;
+  
+
+ 
+}
 .un{
-    background-image:url(../assets/img/hero-1.jpg) ;
-    height: 70vw;
-    position: relative;
-    
+   
+    height: 200vh;
+   
 }
-.headers{
-    position: fixed;
-    z-index: 1000;
-    display: flex;
+.fotos{
+   width: 100%;
+    height: 1000px;
+  
+    background-image: url(../assets/img/hero-1.jpg);  
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover; 
+   
+   
 }
+
 .headers-un{
-    display: flex;
-    width: 100% ;
-    gap: 10vw;
-    position: relative;
+display: flex;
+width: 100% ;
+
+font-family: 'Plus Jakarta Sans', sans-serif;
+margin-top: 0;
+font-size: 1.3rem;
+
+position: relative;
 }
 .headers-un ul {
-    display: flex;
-    list-style-type: none;
-    gap: 1.5vw;
-    margin-top: 3vw;
-    position: relative;
+display: flex;
+list-style-type: none;
+gap: 3.5vw;
+margin-top: 3vw;
+font-weight: 900;
+line-height: 50px;
+position: relative;
 }
 .headers-un li{
-    color: aliceblue;
+color: aliceblue;
 }
 .headers-un img{
-    left: 0;
-    width: 10vw;
-    margin-top: 3vw;
-    position: relative;
+left: 0;
+width: 11.2%;
+
+margin-left: 0;
+margin: 5vh;
+position: relative;
 }
 .headers-deux{
-    display: flex;
-    color: aliceblue;
-    gap: 1.5vw;
-    margin-top: 3vw;
-    position: relative;
+display: flex;
+color: aliceblue;
+gap: 1.5vw;
+margin-top: 3vw;
+margin-left: 3.4vw;
+position: relative;
 }
 .headers-trois button{
-    width: 7vw;
-    height: 3vw;
-    border-radius: 9px;
+width: 7vw;
+height: 3vw;
+border-radius: 9px;
 }
 .un-un{
-    display: flex;
-    margin-top: 7vh;
-    gap: 19vw;
+display: flex;
+margin-top: 7vh;
+gap: 6vw;
+color: aliceblue;
+font-family: 'Plus Jakarta Sans', sans-serif;
+
+position: relative;
+}
+.un-un-un h1{
+    font-size: 75px;
+}
+.un-un-un p{
+    font-size: 21px;  
+    line-height: 1.25;
 }
 .un-un img{
-    
-    width: 40%;
+
+width: 43%;
+margin-left: 1.6vw;
+
 }
 </style>
