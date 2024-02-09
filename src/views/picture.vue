@@ -1,6 +1,6 @@
 <template>
     <div>
-
+            <i class="bi bi-graphics"></i>
     </div>
 </template>
 
